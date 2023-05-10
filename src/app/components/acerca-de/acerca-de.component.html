@@ -1,0 +1,17 @@
+<section class="informacion">
+    <div class="descripcion">
+        <img [src]="persona.imgPersona" alt="Federico Krenn, Fullstack developer" class="foto-perfil">
+        <div class="descripcion__info">
+            <h2>{{persona.nombrePersona}}</h2>
+            <h3>{{persona.puestoPersona}}</h3>
+            <h3 class="location">{{persona.ubicacionPersona}}</h3>
+        </div>
+    </div>
+    <div class="about-me">
+        <div class="about-me__child">
+            <h3>Sobre mí</h3>
+            <p>{{persona.sobreMi}}</p>
+        </div>
+        <i class="fa-solid fa-pen" *ngIf="isLogged" (click)="openDialogEdit()"></i>
+    </div>
+</section>
